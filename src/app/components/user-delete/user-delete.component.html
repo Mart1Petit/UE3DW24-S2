@@ -1,8 +1,20 @@
 <div class="container main-content">
     <h2>Suppression d'un utilisateur</h2>
-    <div class="form-container">
-        <form>
-
-        </form>
+    <div class="users-container col-lg-6">
+        <ul>
+            <li *ngFor="let user of users">
+                <div class="card user">
+                    <div class="row justify-content-around align-items-center">
+                    <div class="user-list-container col-5">
+                        <p>Prénom : {{ user.firstname }}</p>
+                        <p>Nom : {{ user.lastname }}</p>
+                    </div>
+                    <div class="user-delete-container col-5">
+                        <button (click)="deleteOneUser(user)" class="btn btn-danger">Supprimer</button>
+                    </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </div>
 </div>

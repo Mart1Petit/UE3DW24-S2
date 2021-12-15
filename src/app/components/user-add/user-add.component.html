@@ -1,8 +1,18 @@
 <div class="container main-content">
     <h2>Création d'un utilisateur</h2>
-    <div class="form-container">
-        <form>
-
+    <div class="form-container col-4">
+        <form [formGroup]="formValue">
+            <div class="mb-3">
+                <label for="firstnameInput" class="form-label">Prénom</label>
+                <input type="text" formControlName="firstname" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="lastnameInput" class="form-label">Nom</label>
+                <input type="text" formControlName ="lastname" class="form-control">
+            </div>
+            <div class="b-3">
+                <button type="button" (click)="addOneUser()" class="btn btn-primary">Créer l'utilisateur</button>
+            </div>
         </form>
     </div>
 </div>

@@ -1,16 +1,17 @@
 $general-header-color: rgb(61, 61, 61);
+$header-text-color : white;
 
 .general-header {
     background-color : $general-header-color;
 }
 .header-title {
-    color: white;
+    color: $header-text-color;
 }
 .header-container {
     padding: 1em 0;
 }
 .home-link {
-    color: white;
+    color: $header-text-color;
 }
 .home-link:hover {
     background-color: inherit;
