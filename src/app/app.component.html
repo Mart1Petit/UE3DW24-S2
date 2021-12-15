@@ -1,5 +1,23 @@
 <!--
 <span> {{ title }} app is running !</span>
-<app-header></app-header>
 -->
+<app-header></app-header>
+
+<div class="container main-links">
+    <div class="row">
+        <div class="col">
+            <a routerLink="/users" class="btn btn-primary">Lecture des utilisateurs</a>
+        </div>
+        <div class="col">
+            <a routerLink="user-add" class="btn btn-primary">Création d'un utilisateur</a>
+        </div>
+        <div class="col">
+            <a routerLink="user-update" class="btn btn-primary">Modification d'un utilisateur</a>
+        </div>
+        <div class="col">
+            <a routerLink="user-delete" class="btn btn-primary">Supression d'un utilisateur</a>
+        </div>
+    </div>
+</div>
+
 <router-outlet></router-outlet>

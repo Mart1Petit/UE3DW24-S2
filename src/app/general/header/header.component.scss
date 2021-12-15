@@ -5,5 +5,13 @@ $general-header-color: rgb(61, 61, 61);
 }
 .header-title {
     color: white;
+}
+.header-container {
     padding: 1em 0;
+}
+.home-link {
+    color: white;
+}
+.home-link:hover {
+    background-color: inherit;
 }

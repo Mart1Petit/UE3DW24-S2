@@ -1,4 +1,4 @@
-<app-header></app-header>
+<!-- <app-header></app-header> -->
 
 <div class="container main-content">
     <h2>Affichage des utilisateurs</h2>
@@ -6,8 +6,8 @@
         <ul>
             <li *ngFor="let user of users">
                 <div class="card user">
-                    <p>Prénom : {{ user.firstname }} </p>
-                <p>Nom : {{ user.lastname }}</p>
+                    <p>Prénom : {{ user.firstname }}</p>
+                    <p>Nom : {{ user.lastname }}</p>
                 </div>
             </li>
         </ul>
